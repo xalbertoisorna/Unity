@@ -24,9 +24,9 @@ struct UNITY_FIXTURE_T
 extern struct UNITY_FIXTURE_T UnityFixture;
 
 typedef void unityfunction(void);
-void UnityTestRunner(unityfunction* setup,
-                     unityfunction* testBody,
-                     unityfunction* teardown,
+void UnityTestRunner(UNITY_FPTR_GROUP unityfunction* setup,
+                     UNITY_FPTR_GROUP unityfunction* testBody,
+                     UNITY_FPTR_GROUP unityfunction* teardown,
                      const char* printableName,
                      const char* group,
                      const char* name,

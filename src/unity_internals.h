@@ -12,6 +12,9 @@
 #include "unity_config.h"
 #endif
 
+/* XCORE function pointer groups for the test functions */
+#include "unity_xcore.h"
+
 #ifndef UNITY_EXCLUDE_SETJMP_H
 #include <setjmp.h>
 #endif

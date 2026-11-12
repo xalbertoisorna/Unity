@@ -63,9 +63,9 @@ static int groupSelected(const char* group)
     return selected(UnityFixture.GroupFilter, group);
 }
 
-void UnityTestRunner(unityfunction* setup,
-                     unityfunction* testBody,
-                     unityfunction* teardown,
+void UnityTestRunner(UNITY_FPTR_GROUP unityfunction* setup,
+                     UNITY_FPTR_GROUP unityfunction* testBody,
+                     UNITY_FPTR_GROUP unityfunction* teardown,
                      const char* printableName,
                      const char* group,
                      const char* name,
